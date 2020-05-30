@@ -24,6 +24,6 @@ Next steps
 
 My database organization its a mess, so I need to make all the ./src stuff more intuitive 
 
-on scrappers.js i need a loop to go trhough all Pokemonteam possibilities, now it was 200 lines with a lot of similar code to repeat the task
+on scrappers.js i need a loop to go trhough all Pokemonteam possibilities, now it has 200 lines with a lot of similar code to repeat the task
 
 i need to make all the comments in english and change the name of some variables
