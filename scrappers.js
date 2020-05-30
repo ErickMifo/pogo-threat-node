@@ -27,6 +27,8 @@ var ID1 = ''
 var ID2 = ''
 var [ID, ID1, ID2] = comb1 
 
+// i need to make a loop to go through all the combinations of the pokemons
+
 async function tudao() {
 
 
@@ -36,26 +38,24 @@ async function tudao() {
   const page = await browser.newPage();
   await page.goto('https://pvpoke.com/team-builder/');
   
-// abrir import/export
+// open import/export
     const aba = await page.$x('//*[@id="main"]/div[2]/div[1]/div/div[1]/button[2]');
     await aba[0].click();
 
 // input pokemons 
-
-
     const team = await page.$x('/html/body/div[2]/div/div[3]/div/textarea');
     await team[0].type('' + await getPoke.getPoke(ID) + '\n' + await getPoke.getPoke(ID1) + 
     '\n' + await getPoke.getPoke(ID2) + '');
 
-// clicar em import 357, 500
+// click import
     await page.click('body > div.modal > div > div.modal-content > div > div.center > div')
 
-// clicar em gerar
+// click in generate
   const aba2 = await page.$x('//*[@id="main"]/button');
   await aba2[0].click();
   
 
-// pegar o resultado
+// GET the result 
 
     const[el] = await page.$x('/html/body/div/div/div[4]/div[3]/p[2]/b');
     const txt = await el.getProperty('textContent');
@@ -80,27 +80,19 @@ async function scrapper1 () {
   const page = await browser.newPage();
   await page.goto('https://pvpoke.com/team-builder/');
   
-// abrir import/export
     const aba = await page.$x('//*[@id="main"]/div[2]/div[1]/div/div[1]/button[2]');
     await aba[0].click();
-
-// input pokemons 
 
 
     const team = await page.$x('/html/body/div[2]/div/div[3]/div/textarea');
     await team[0].type('' + await getPoke.getPoke(ID) + '\n' + await getPoke.getPoke(ID1) + 
     '\n' + await getPoke.getPoke(ID2) + '');
 
-// clicar em import 357, 500
     await page.click('body > div.modal > div > div.modal-content > div > div.center > div')
 
-// clicar em gerar
   const aba2 = await page.$x('//*[@id="main"]/button');
   await aba2[0].click();
   
-
-// pegar o resultado
-
     const[el] = await page.$x('/html/body/div/div/div[4]/div[3]/p[2]/b');
     const txt = await el.getProperty('textContent');
     const threat = await txt.jsonValue();
@@ -122,27 +114,18 @@ await scrapper1()
   const page = await browser.newPage();
   await page.goto('https://pvpoke.com/team-builder/');
   
-// abrir import/export
     const aba = await page.$x('//*[@id="main"]/div[2]/div[1]/div/div[1]/button[2]');
     await aba[0].click();
-
-// input pokemons 
-
 
     const team = await page.$x('/html/body/div[2]/div/div[3]/div/textarea');
     await team[0].type('' + await getPoke.getPoke(ID) + '\n' + await getPoke.getPoke(ID1) + 
     '\n' + await getPoke.getPoke(ID2) + '');
 
-// clicar em import 357, 500
     await page.click('body > div.modal > div > div.modal-content > div > div.center > div')
 
-// clicar em gerar
   const aba2 = await page.$x('//*[@id="main"]/button');
   await aba2[0].click();
-  
-
-// pegar o resultado
-
+ 
     const[el] = await page.$x('/html/body/div/div/div[4]/div[3]/p[2]/b');
     const txt = await el.getProperty('textContent');
     const threat = await txt.jsonValue();
@@ -163,26 +146,18 @@ await scrapper2()
   const page = await browser.newPage();
   await page.goto('https://pvpoke.com/team-builder/');
   
-// abrir import/export
     const aba = await page.$x('//*[@id="main"]/div[2]/div[1]/div/div[1]/button[2]');
     await aba[0].click();
-
-// input pokemons 
-
 
     const team = await page.$x('/html/body/div[2]/div/div[3]/div/textarea');
     await team[0].type('' + await getPoke.getPoke(ID) + '\n' + await getPoke.getPoke(ID1) + 
     '\n' + await getPoke.getPoke(ID2) + '');
 
-// clicar em import 357, 500
     await page.click('body > div.modal > div > div.modal-content > div > div.center > div')
 
-// clicar em gerar
   const aba2 = await page.$x('//*[@id="main"]/button');
   await aba2[0].click();
   
-
-// pegar o resultado
 
     const[el] = await page.$x('/html/body/div/div/div[4]/div[3]/p[2]/b');
     const txt = await el.getProperty('textContent');
