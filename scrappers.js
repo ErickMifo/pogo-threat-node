@@ -44,8 +44,8 @@ async function tudao() {
 
 
     const team = await page.$x('/html/body/div[2]/div/div[3]/div/textarea');
-    await team[0].type('' + await getPoke.getPoke(ID) + '\n' + await getPoke1.getPoke1(ID1) + 
-    '\n' + await getPoke2.getPoke2(ID2) + '');
+    await team[0].type('' + await getPoke.getPoke(ID) + '\n' + await getPoke.getPoke(ID1) + 
+    '\n' + await getPoke.getPoke(ID2) + '');
 
 // clicar em import 357, 500
     await page.click('body > div.modal > div > div.modal-content > div > div.center > div')
@@ -88,8 +88,8 @@ async function scrapper1 () {
 
 
     const team = await page.$x('/html/body/div[2]/div/div[3]/div/textarea');
-    await team[0].type('' + await getPoke.getPoke(ID) + '\n' + await getPoke1.getPoke1(ID1) + 
-    '\n' + await getPoke2.getPoke2(ID2) + '');
+    await team[0].type('' + await getPoke.getPoke(ID) + '\n' + await getPoke.getPoke(ID1) + 
+    '\n' + await getPoke.getPoke(ID2) + '');
 
 // clicar em import 357, 500
     await page.click('body > div.modal > div > div.modal-content > div > div.center > div')
@@ -130,8 +130,8 @@ await scrapper1()
 
 
     const team = await page.$x('/html/body/div[2]/div/div[3]/div/textarea');
-    await team[0].type('' + await getPoke.getPoke(ID) + '\n' + await getPoke1.getPoke1(ID1) + 
-    '\n' + await getPoke2.getPoke2(ID2) + '');
+    await team[0].type('' + await getPoke.getPoke(ID) + '\n' + await getPoke.getPoke(ID1) + 
+    '\n' + await getPoke.getPoke(ID2) + '');
 
 // clicar em import 357, 500
     await page.click('body > div.modal > div > div.modal-content > div > div.center > div')
@@ -171,8 +171,8 @@ await scrapper2()
 
 
     const team = await page.$x('/html/body/div[2]/div/div[3]/div/textarea');
-    await team[0].type('' + await getPoke.getPoke(ID) + '\n' + await getPoke1.getPoke1(ID1) + 
-    '\n' + await getPoke2.getPoke2(ID2) + '');
+    await team[0].type('' + await getPoke.getPoke(ID) + '\n' + await getPoke.getPoke(ID1) + 
+    '\n' + await getPoke.getPoke(ID2) + '');
 
 // clicar em import 357, 500
     await page.click('body > div.modal > div > div.modal-content > div > div.center > div')
