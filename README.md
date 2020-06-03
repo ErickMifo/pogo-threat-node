@@ -17,13 +17,10 @@ Installation
   
   Nodejs, MongoDB, express, mongoose, node-fetch, puppeteer, requireDir, mongoose-paginate ( this last 2 are optional ).
   
-You'll need to create a Database (mine is called "teste", so if you name it differently, change the url on the "server.js") and a collection (mine's called products) with your pokemons like "pokemon" : "azumarill,BUBBLE,HYDRO_PUMP,ICE_BEAM". After this you will need to get the _id_ from every pokemon and paste at "const a/b/c/d" on the scrappers.js( I know, this sound dumb, but i dont know how to do it differently).
-
+You'll need to create a Database (mine is called "teste", so if you name it differently, change the url on the "server.js") and a collection (mine's called products) with your pokemons like "name" : "azumarill,BUBBLE,HYDRO_PUMP,ICE_BEAM".
 
 Next steps
 
 My database organization its a mess, so I need to make all the ./src stuff more intuitive 
 
-on scrappers.js i need a loop to go trhough all Pokemonteam possibilities, now it has 200 lines with a lot of similar code to repeat the task
-
-i need to make all the comments in english and change the name of some variables
+on scrappers.js i need to wait the previous scrap to end to start another so my page do not crash
