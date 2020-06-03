@@ -1,35 +1,32 @@
 const puppeteer = require('puppeteer');
 const getPoke = require('./getPoke');
-const a = 
-{
-   "a": "5ed6bee8f747c0015fe7e1ea"
-};
-const b = 
-{
-  "a": "5ed6bf28f747c0015fe7e1eb"
-};
-const c = 
-{
-  "a": "5ed6bf3af747c0015fe7e1ec"
-};
-const d = 
-{
-  "a": "5ed6bf49f747c0015fe7e1ed"
-}
+const getID = require('./getID')
+
+var a =   ''
+var b =  ''
+var c =  ''
+var d = '' 
+
+
+async function scrapperEach() {
+  var a = await getID.getID(0) 
+  var b = await getID.getID(1)
+  var c = await getID.getID(2)
+  var d = await getID.getID(3)
 
 
 combs = [
-[a.a, b.a, c.a], [a.a, b.a, d.a],[a.a, c.a, d.a],
-[b.a, c.a, d.a] ]
+[a, b, c], [a, b, d],[a, c, d],
+[b, c, d] ]
 var ID = ''
 var ID1 = ''
 var ID2 = ''
-
- combs.forEach((combs) => {
+  combs.forEach((combs) => {
 var   ID = combs[0];
 var   ID1 = combs [1];
 var   ID2 = combs [2]; 
-async function scrapper () {
+      async function scrapper () {
+
     const browser = await puppeteer.launch({headless: false, slowMo:50});
     const page = await browser.newPage();
     await page.goto('https://pvpoke.com/team-builder/');
@@ -61,11 +58,15 @@ async function scrapper () {
      
     await browser.close();
   }
-  scrapper()
+  
+scrapper()
 
 
-})
+})}
 
+
+
+scrapperEach()
 
 
 
