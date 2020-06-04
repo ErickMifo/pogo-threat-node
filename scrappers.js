@@ -21,7 +21,7 @@ combs = [
 var ID = ''
 var ID1 = ''
 var ID2 = ''
-  combs.forEach((combs) => {
+  combs.forEach((combs, index) => {
 var   ID = combs[0];
 var   ID1 = combs [1];
 var   ID2 = combs [2]; 
@@ -59,7 +59,9 @@ var   ID2 = combs [2];
     await browser.close();
   }
   
-scrapper()
+setTimeout(() => {
+        scrapper()
+      }, 35000 * index);
 
 
 })}
