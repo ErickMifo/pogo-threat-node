@@ -23,4 +23,4 @@ Next steps
 
 My database organization its a mess, so I need to make all the ./src stuff more intuitive 
 
-on scrappers.js i need to wait the previous scrap to end to start another so my page do not crash
+i need to put scrapper() on another file to make it clean
