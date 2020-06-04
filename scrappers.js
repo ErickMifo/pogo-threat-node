@@ -13,11 +13,11 @@ async function scrapperEach() {
   var b = await getID.getID(1)
   var c = await getID.getID(2)
   var d = await getID.getID(3)
-
+  var e = await getID.getID(4)
 
 combs = [
-[a, b, c], [a, b, d],[a, c, d],
-[b, c, d] ]
+[a, b, c], [a, b, d],[a, c, d], [a, b, e], [a, c, e],
+[a, d, e], [b , c, e], [b, d, e], [c, d, e], [b, c, d] ]
 var ID = ''
 var ID1 = ''
 var ID2 = ''
@@ -54,7 +54,7 @@ var   ID2 = combs [2];
       const txt = await el.getProperty('textContent');
       const threat = await txt.jsonValue();
   
-    await console.log({threat})
+    await console.log({threat}, `${await getPoke.getPoke(ID)}, ${await getPoke.getPoke(ID1)}, ${await getPoke.getPoke(ID2)}`)
      
     await browser.close();
   }
