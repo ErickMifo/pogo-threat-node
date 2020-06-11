@@ -2,11 +2,6 @@ const puppeteer = require('puppeteer');
 const getPoke = require('./getPoke');
 const getID = require('./getID')
 
-var a =   ''
-var b =  ''
-var c =  ''
-var d = '' 
-
 
 async function scrapperEach() {
   var a = await getID.getID(0) 
@@ -18,9 +13,6 @@ async function scrapperEach() {
 combs = [
 [a, b, c], [a, b, d],[a, c, d], [a, b, e], [a, c, e],
 [a, d, e], [b , c, e], [b, d, e], [c, d, e], [b, c, d] ]
-var ID = ''
-var ID1 = ''
-var ID2 = ''
   combs.forEach((combs, index) => {
 var   ID = combs[0];
 var   ID1 = combs [1];
