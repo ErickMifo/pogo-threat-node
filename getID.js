@@ -1,6 +1,6 @@
 const fetch = require('node-fetch');
 
-const getID = async function geID(Number) {
+async function getID(Number) {
     try{    
   let response = await fetch('http://localhost:3001/pokemons');
   let data = await response.json()
