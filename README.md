@@ -11,7 +11,7 @@ https://pvpoke.com/team-builder/ offers you a solution for this asking you to im
    
 Installation
 
-  *HIS IS MY FIRST CODE, SO ITS REALLY NOT CLEAN OR SMART AT ALL* plus i got some code from https://github.com/Rocketseat to make a DB.
+  *THIS IS MY FIRST CODE, SO ITS REALLY NOT CLEAN OR SMART AT ALL* plus i got some code from https://github.com/Rocketseat to make a DB.
 
   To begin, you’ll need:
   
@@ -23,4 +23,4 @@ Next steps
 
 My database organization its a mess, so I need to make all the ./src stuff more intuitive 
 
-i need to put scrapper() on another file to make it clean
+get the scrappers results and post on my DB 
