@@ -2,6 +2,7 @@ const puppeteer = require('puppeteer');
 const getPoke = require('./getPoke');
 const getID = require('./getID')
 
+var PokeTeams = [];
 
 async function scrapperEach() {
   var a = await getID.getID(0) 
@@ -46,9 +47,10 @@ var   ID2 = combs [2];
       const txt = await el.getProperty('textContent');
       const threat = await txt.jsonValue();
   
-    await console.log({threat}, `${await getPoke.getPoke(ID)}, ${await getPoke.getPoke(ID1)}, ${await getPoke.getPoke(ID2)}`)
-     
-    await browser.close();
+    PokeTeams.push({threat}, `${await getPoke.getPoke(ID)}, ${await getPoke.getPoke(ID1)}, ${await getPoke.getPoke(ID2)}`)
+    browser.close();
+    return PokeTeams
+    console.log (PokeTeams)
   }
   
 setTimeout(() => {
