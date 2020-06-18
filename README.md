@@ -2,9 +2,9 @@
 input your DB pokemon to Pvpoke team builder and get the threat score
 
   Casual players can have a really hard time on PokemonGo GoBattleLeague since build a team is a really hard task. 
-https://pvpoke.com/team-builder/ offers you a solution for this asking you to imput some of your pokemons and returning some data like how those pokemons deal with the meta, but still really hard to build a team since you gotta imput lots of pokemons a lot of times until you figure out what is the best combination for the Pokes that you have.
+https://pvpoke.com/team-builder/ offers you a solution for this asking you to input some of your pokemons and returning some data like how those pokemons deal with the meta, but still really hard to build a team since you gotta input lots of pokemons a lot of times until you figure out what is the best combination for the Pokes that you have.
   
-   This application try to solve this problem making you a DataBase of all your pokemons, making a imput 3 by 3 on https://pvpoke.com/team-builder/ , getting the "threat score" of all of your possible teams (using Cn,p = n!/p! (n – p)!) and just letting you choose the order of the team you picked.
+   This application try to solve this problem making you a DataBase of all your pokemons, making a input 3 by 3 on https://pvpoke.com/team-builder/ , getting the "threat score" of all of your possible teams (using Cn,p = n!/p! (n – p)!) and just letting you choose the order of the team you picked.
    
    So as you can notice, it do not build THE BEST POSSIBLE TEAM WITH YOUR POKEMONS, but it can save a lot of time of a casual Go Battle League player. 
    
