@@ -15,9 +15,18 @@ Installation
 
   To begin, you’ll need:
   
-  Nodejs, MongoDB, express, mongoose, node-fetch, puppeteer, requireDir, mongoose-paginate ( this last 2 are optional ).
+  Nodejs, MongoDB, express, mongoose, node-fetch, puppeteer, requireDir, mongoose-paginate.
   
-You'll need to create a Database (mine is called "teste", so if you name it differently, change the url on the "server.js") and a collection (mine's called products) with your pokemons like "name" : "azumarill,BUBBLE,HYDRO_PUMP,ICE_BEAM".
+You'll need to create a Database (mine is called "pokedb", so if you name it differently, change the url on the "server.js") and a collection (mine's called products) with your pokemons.
+
+   this is how my DB looks like:
+  ![Captura de Tela (2)](https://user-images.githubusercontent.com/65738815/85072924-3d4bb480-b190-11ea-9dde-71462365b21b.png)
+  
+After this you need to run "npm run dev" into your terminal to start the server
+and run "node scrappers.js" to get the respective threat score of each of your team.
+
+  It should look like this:
+  ![Captura de Tela (1)](https://user-images.githubusercontent.com/65738815/85072912-36bd3d00-b190-11ea-9487-8a4632395c53.png)
 
 Next steps
 
