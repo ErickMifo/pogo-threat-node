@@ -11,4 +11,4 @@ async function getPoke(ID) {
 
 
 
-exports.getPoke = getPoke;
+module.exports = getPoke;
