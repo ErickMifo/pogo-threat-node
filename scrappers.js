@@ -5,11 +5,11 @@ const getID = require('./getID')
 var PokeTeams = [];
 
 async function scrapperEach() {
-  var a = await getID.getID(0) 
-  var b = await getID.getID(1)
-  var c = await getID.getID(2)
-  var d = await getID.getID(3)
-  var e = await getID.getID(4)
+  var a = await getID(0) 
+  var b = await getID(1)
+  var c = await getID(2)
+  var d = await getID(3)
+  var e = await getID(4)
 
 combs = [
 [a, b, c], [a, b, d],[a, c, d], [a, b, e], [a, c, e],
@@ -31,8 +31,8 @@ var   ID2 = combs [2];
   // input pokemons 
 
       const team = await page.$x('/html/body/div[2]/div/div[3]/div/textarea');
-      await team[0].type('' + await getPoke.getPoke(ID) + '\n' + await getPoke.getPoke(ID1) + 
-      '\n' + await getPoke.getPoke(ID2) + '');
+      await team[0].type('' + await getPoke(ID) + '\n' + await getPoke(ID1) + 
+      '\n' + await getPoke(ID2) + '');
   
   // click Import
       await page.click('body > div.modal > div > div.modal-content > div > div.center > div')
@@ -47,7 +47,7 @@ var   ID2 = combs [2];
       const txt = await el.getProperty('textContent');
       const threat = await txt.jsonValue();
   
-    PokeTeams.push({threat}, `${await getPoke.getPoke(ID)}, ${await getPoke.getPoke(ID1)}, ${await getPoke.getPoke(ID2)}`)
+    PokeTeams.push({threat}, `${await getPoke(ID)}, ${await getPoke(ID1)}, ${await getPoke(ID2)}`)
     browser.close();
     return PokeTeams
     console.log (PokeTeams)
