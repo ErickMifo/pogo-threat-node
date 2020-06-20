@@ -9,4 +9,4 @@ async function getID(Number) {
 }
 
 
-exports.getID = getID;
+module.exports = getID;
